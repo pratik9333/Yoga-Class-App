@@ -1,0 +1,35 @@
+version: "3"
+services:
+  web:
+    env_file:
+      - local.env
+    networks:
+      - webnet
+    depends_on:
+      - postgres
+    build:
+      context: ..
+      dockerfile: infrastructure/Dockerfile
+    ports:
+      - 8080:80
+  postgres:
+    image: postgres:15.1
+    env_file:
+      - local.env
+    networks:
+      - webnet
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+  adminer:
+    image: adminer
+    networks:
+      - webnet
+    restart: always
+    ports:
+      - 8080:8080
+volumes:
+  pgdata:
+networks:
+  webnet:
