@@ -18,7 +18,7 @@ export default function Register() {
         e.preventDefault();
         try {
             setLoading(true);
-            const resp = await fetch('http://localhost:80/register', {
+            const resp = await fetch('http://node-server-lb-1092089902.us-east-1.elb.amazonaws.com/register', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(registerData)
@@ -31,7 +31,7 @@ export default function Register() {
             return alert(data.message);
         }
             
-        const paymentResp = await fetch(`http://localhost:80/pay/${data.user.id}`, {
+        const paymentResp = await fetch(`http://node-server-lb-1092089902.us-east-1.elb.amazonaws.com/pay/${data.user.id}`, {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
         });
@@ -42,8 +42,9 @@ export default function Register() {
         
         setLoading(false);
         
-        } catch (error:any) {
-            alert(error.message);
+        } catch (error: any) {
+            setLoading(false);
+            alert(`Server error, please try again`);
         }
         
     }
@@ -75,7 +76,7 @@ export default function Register() {
               <input 
               onChange={(e) => setRegisterData({...registerData, email: e.target.value})} className="form-input" 
               id="txt-input" 
-              type="text" 
+              type="email" 
               placeholder="Email" 
               required />
               <br />
