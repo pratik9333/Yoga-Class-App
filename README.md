@@ -16,4 +16,9 @@ month. I.e. participants can shift from one batch to another in different months
 same month they need to be in same batch. 
 
 Tech Stack Used
-![image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200402205611/What-is-PERN-Stack.png)
+
+![image](https://miro.medium.com/max/800/1*lxwmoWhzBjSXYc9UjJVaYQ.png)
+
+## Home Page
+   - It contains registration form where users need to fill in the required details. Based on request to backend, it will respond to frontend. 
+   - ![image](https://drive.google.com/file/d/1CtemLzkuNzo4boY6Jv-eU4_MNZ8AAfYM/view?usp=share_link)
