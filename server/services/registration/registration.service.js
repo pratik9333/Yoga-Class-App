@@ -12,7 +12,7 @@ exports.registerUser = async (req, res) => {
     if (!getBatch) {
       return res
         .status(400)
-        .json({ success: false, error: "Batch does not exists" });
+        .json({ success: false, message: "Batch does not exists" });
     }
 
     if (req.body.newUser) {

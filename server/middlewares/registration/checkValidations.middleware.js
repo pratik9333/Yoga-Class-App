@@ -5,6 +5,8 @@ exports.checkValidations = async (req, res, next) => {
   try {
     const { fullname, email, age, gender, batch } = req.body;
 
+    console.log(req.body);
+
     if (!fullname || !email || !age || !gender || !batch) {
       return res.status(400).json({
         success: false,
