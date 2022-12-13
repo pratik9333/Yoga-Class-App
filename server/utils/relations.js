@@ -1,6 +1,6 @@
-const User = require("../models/user.model");
-const Payment = require("../models/payment.model");
-const Batch = require("../models/batch.model");
+const User = require("../models/user");
+const Payment = require("../models/payment");
+const Batch = require("../models/batch");
 
 exports.Relations = () => {
   //

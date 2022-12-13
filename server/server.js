@@ -1,7 +1,6 @@
 const cors = require("cors");
 const express = require("express");
 const app = express();
-
 const sequelize = require("./config/db");
 
 //regular middleware
@@ -10,9 +9,13 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
 
-// file middleware
+// home route
+app.get("/", (req, res) => {
+  res.send("<h1> Welcome to yoga class api! </h1>");
+});
 
 // importing all routes here
+const registration = require("./api/registration");
 
 // router middleware
 
