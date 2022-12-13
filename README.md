@@ -1,5 +1,4 @@
-<p align="center">Yoga-Class-App (Demo only)</p>
-
+# Unite - Video Conferencing Web App
 
 ## About
 This App designed to better manage the users admission for the yoga classes which happen every month. 
@@ -17,3 +16,4 @@ month. I.e. participants can shift from one batch to another in different months
 same month they need to be in same batch. 
 
 This app was created using node.js as server side language, postresql as sql database, express.js as node.js framework that helps manage servers and routes better and lastly react.js was used to create the frontend app. 
+
