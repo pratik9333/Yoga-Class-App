@@ -10,12 +10,12 @@ const Batch = sequelize.define(
     },
 
     startTime: {
-      type: DataTypes.TIME,
+      type: DataTypes.STRING,
       allowNull: false,
     },
 
     endTime: {
-      type: DataTypes.TIME,
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },

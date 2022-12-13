@@ -23,12 +23,13 @@ const Payment = sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    paymentDate: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+    },
   },
   {
     timestamps: true,
-    updatedAt: false,
-    createdAt: false,
-    createdAt: "paymentDate",
   }
 );
 
