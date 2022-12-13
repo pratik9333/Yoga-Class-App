@@ -16,4 +16,4 @@ month. I.e. participants can shift from one batch to another in different months
 same month they need to be in same batch. 
 
 Tech Stack Used
-![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fwhat-is-pern-stack%2F&psig=AOvVaw2ccKIPmA0ten7VnvmwVmzg&ust=1671058934786000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJCRtOPZ9_sCFQAAAAAdAAAAABAE)
+![image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200402205611/What-is-PERN-Stack.png)
