@@ -48,8 +48,8 @@ cd infrastructure
 docker-compose up -d --build
 ```
 
-The app is now running at http://localhost:80
-To see the database entries, open your web browser and navigate to http://localhost:8080
+- The app is now running at http://localhost:80
+- To see the database entries, open your web browser and navigate to http://localhost:8080
 
 - Fill the below as same entries, and lastly password can be accessed from .env file in your local system. 
 - ![image](https://res.cloudinary.com/dqdnwfv3r/image/upload/v1670977181/Screenshot_2022-12-14_at_5.48.41_AM_cyyt5n.png)
