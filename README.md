@@ -35,9 +35,9 @@ same month they need to be in same batch.
 
 ![image](https://res.cloudinary.com/dqdnwfv3r/image/upload/v1670975705/Images/WhatsApp_Image_2022-12-14_at_4.58.44_AM_bdtqsp.jpg)
 
-## Home Page
+## User Interface Details
 
-   - It contains registration form where users need to fill in the required details. Based on request to backend, it will respond to frontend. 
+   - Just contain a registration form where users need to fill in the required details. Based on request to backend, it will respond to frontend. 
    - ![image](https://res.cloudinary.com/dqdnwfv3r/image/upload/v1670973349/Images/Screenshot_2022-12-14_at_4.15.41_AM_c61tb1.png)
 
 
