@@ -17,9 +17,19 @@ participants can choose any batch in a month and can move to any other batch nex
 month. I.e. participants can shift from one batch to another in different months but in
 same month they need to be in same batch. 
 
+## Implementation Details
+
 - Tech Stack Used
 
-![image](https://miro.medium.com/max/800/1*lxwmoWhzBjSXYc9UjJVaYQ.png)
+![image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200402205611/What-is-PERN-Stack.png)
+
+- To get the user details, a simple form is created using react.js. It takes required information and call a post request to the server. 
+
+- In server, a simple middleware has been created to check the validation of data sent by user and then passing it to next controller to store data in database if validation passed or will sent a failed response to frontend included reasons.
+
+- A mock function named handlePayment() is been called that does payment for user, store the payment details in the database and sents the response according to that in frontend. 
+
+- Batches has been added already according to requirements, but it also had feature to add more batches according to the requirements. 
 
 - ER Diagram Of App
 
