@@ -38,7 +38,7 @@ same month they need to be in same batch.
 ## User Interface Details
 
    - Just contain a registration form where users need to fill in the required details. Based on request to backend, it will respond to frontend. 
-   - ![image](https://res.cloudinary.com/dqdnwfv3r/image/upload/v1670973349/Images/Screenshot_2022-12-14_at_4.15.41_AM_c61tb1.png)
+   ![image](https://res.cloudinary.com/dqdnwfv3r/image/upload/v1670973349/Images/Screenshot_2022-12-14_at_4.15.41_AM_c61tb1.png)
 
 
 ## Backend Demo Development
@@ -62,7 +62,7 @@ docker-compose up -d --build
 - To see the database entries, open your web browser and navigate to http://localhost:8080
 
 - Fill the below as same entries, and lastly password can be accessed from .env file in your local system. 
-- ![image](https://res.cloudinary.com/dqdnwfv3r/image/upload/v1670977181/Screenshot_2022-12-14_at_5.48.41_AM_cyyt5n.png)
+![image](https://res.cloudinary.com/dqdnwfv3r/image/upload/v1670977181/Screenshot_2022-12-14_at_5.48.41_AM_cyyt5n.png)
 
 
 ## Frontend Demo Development
