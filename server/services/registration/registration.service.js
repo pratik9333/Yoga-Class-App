@@ -1,6 +1,8 @@
 const User = require("../../models/user");
 const Batch = require("../../models/batch");
 
+const { Op } = require("sequelize");
+
 exports.registerUser = async (req, res) => {
   try {
     let user;
@@ -65,21 +67,30 @@ exports.addBatch = async (req, res) => {
       });
     }
 
-    const getBatch = await Batch.findOne({ where: { batchName } });
+    // checking current batch name with existing batches names
+    const getExistingBatchByName = await Batch.findOne({
+      where: { batchName },
+    });
 
-    if (getBatch) {
-      if (startTime === getBatch.startTime || endTime === getBatch.endTime) {
-        return res.status(400).json({
-          success: false,
-          message:
-            "Batch time is clashing with other batch time, please change your timings",
-        });
-      }
-      if (getBatch.batchName === batchName) {
-        return res
-          .status(400)
-          .json({ success: false, message: "Batch name already exists" });
-      }
+    if (getExistingBatchByName) {
+      return res
+        .status(400)
+        .json({ success: false, message: "Batch name already exists" });
+    }
+
+    // checking current batch starttime with existing batches starttime
+    const getExistingBatchByTime = await Batch.findOne({
+      where: {
+        [Op.or]: [{ startTime: startTime }],
+      },
+    });
+
+    if (getExistingBatchByTime) {
+      return res.status(400).json({
+        success: false,
+        message:
+          "Two simultaneous batches cannot have same starting time, please change your timings",
+      });
     }
 
     await Batch.create(req.body);
